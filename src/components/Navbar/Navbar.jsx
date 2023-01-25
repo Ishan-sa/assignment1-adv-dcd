@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/router";
+import { menuList } from "./data";
 
-export default function Navbar({
-  onMenuClick = () => {},
-  onScholarshipClick = () => {},
-}) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const router = useRouter();
+
   return (
     <>
       <div className="nav-img-container">
@@ -29,9 +30,18 @@ export default function Navbar({
               </button>
             </div>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+              {menuList.map((o, i) => {
+                return (
+                  <li
+                    key={i}
+                    onClick={() => {
+                      router.push(`/${o.link}`);
+                    }}
+                  >
+                    {o.name}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <Image
