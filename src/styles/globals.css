@@ -13,6 +13,12 @@ html {
   background-image: url("/background-images/backgroundMountain.jpg");
   background-size: cover;
 }
+.parent-cont-reverse {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/background-images/backgroundMountainUpsideDown.jpg");
+  background-size: cover;
+}
 
 .nav-img-container {
   display: flex;
@@ -125,9 +131,104 @@ ul > li {
 .all-parent {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
-  /* width: 100%; */
-  margin-top: 20rem;
-  padding: 0rem 20rem;
+}
+
+.huh {
+  /* max-width: 90%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.contact-child > hr {
+  min-width: 25rem;
+  border: 1.5px solid #ead6c2;
+}
+
+.contact-child > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-parent {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.form-container label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.form-container {
+  margin-top: -3rem;
+}
+
+.width-full {
+  width: 100%;
+}
+
+form {
+  max-width: 700px;
+  border: 1.4px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem 4rem;
+  gap: 0.6rem;
+}
+
+.name-cont {
+  gap: 0.5rem;
+}
+
+.name-child {
+  gap: 0.3rem;
+}
+
+.all-container-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.down-img-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 90%;
 }
