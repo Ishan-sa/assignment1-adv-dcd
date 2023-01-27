@@ -12,7 +12,7 @@ export default function Form() {
             </div>
             <div className="flex flex-col width-full name-child">
               <label for="Name">Last Name:</label>
-              <input placeholder="First Name Here" />
+              <input placeholder="Last Name Here" />
             </div>
           </div>
           <div className="flex flex-col">
