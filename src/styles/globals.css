@@ -253,8 +253,9 @@ form {
 
 .img-text-container {
   display: flex;
-  padding: 0 0.7rem;
-  background-color: #173b4469;
+  padding: 10px;
+  margin: 0px 40px;
+  background-color: rgba(16, 46, 53, 0.5);
   color: #fff;
 }
 
@@ -295,10 +296,7 @@ form {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.about-subhead > p {
-  margin: 0;
+  /* gap: 1rem; */
 }
 
 .carousel-container {
@@ -311,6 +309,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .list-cont {
@@ -335,4 +334,9 @@ form {
 .list-arrows-cont {
   display: flex;
   align-items: center;
+}
+
+.carousel-image-main {
+  background-size: cover;
+  background-repeat: no-repeat;
 }

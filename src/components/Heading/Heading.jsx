@@ -8,7 +8,7 @@ export default function Heading({ title }) {
           <hr />
         </div>
         <div className="contact-child flex">
-          <h2>{title || "Default Title"}</h2>
+          <h1>{title || "Default Title"}</h1>
         </div>
         <div className="contact-child flex">
           <hr />

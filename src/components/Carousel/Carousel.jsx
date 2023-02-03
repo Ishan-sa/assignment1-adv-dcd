@@ -57,12 +57,13 @@ export default function Carousel() {
             />
           </div>
         </div>
-        <div className="image-carousel">
+        <div className="image-carousel" id="carouselImage">
           <Image
             src={carouselImages[current].src || null}
-            width={400}
+            width={500}
             height={200}
             alt="carousel image"
+            className="carousel-image-main"
           />
         </div>
       </div>

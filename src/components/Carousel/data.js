@@ -19,8 +19,4 @@ export const carouselImages = [
     id: 5,
     src: "/carousel-images/4.jpg",
   },
-  {
-    id: 6,
-    src: "/carousel-images/5.jpg",
-  },
 ];
