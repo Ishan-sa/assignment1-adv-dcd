@@ -12,7 +12,7 @@ test.afterAll(async () => {
   console.log("After tests");
 });
 
-test.skip("Header area", () => {
+test.describe("Header area", () => {
   test("The title tag", async ({ page }) => {
     await page.goto(urlHome);
 
@@ -49,7 +49,7 @@ test.skip("Header area", () => {
   });
 });
 
-test.skip("Main area", () => {
+test.describe("Main area", () => {
   test("Header Tag", async ({ page }) => {
     await page.goto(urlHome);
 
@@ -87,7 +87,7 @@ test.skip("Main area", () => {
   });
 });
 
-test.skip("The Arrow Area", () => {
+test.describe("The Arrow Area", () => {
   test("Link Tag and navigation", async ({ page }) => {
     await page.goto(urlHome);
 

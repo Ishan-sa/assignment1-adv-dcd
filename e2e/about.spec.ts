@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { useEffect } from "react";
 
 let urlHome = "http://localhost:3000";
 let urlAbout = "http://localhost:3000/about";
@@ -12,7 +13,7 @@ test.afterAll(async () => {
   console.log("After tests");
 });
 
-test.skip("Header area", () => {
+test.describe("Header area", () => {
   test("The title tag", async ({ page }) => {
     await page.goto(urlAbout);
 
@@ -49,7 +50,7 @@ test.skip("Header area", () => {
   });
 });
 
-test.skip("Main area", () => {
+test.describe("Main area", () => {
   test("Header Tags", async ({ page }) => {
     await page.goto(urlAbout);
 
@@ -78,7 +79,7 @@ test.skip("Main area", () => {
 });
 
 test.describe("Carousel area", () => {
-  test("Carousel Arrows", async ({ page }) => {
+  test.skip("Carousel Arrows", async ({ page }) => {
     await page.goto(urlAbout);
 
     await page.screenshot({ path: "/icons/leftArrow.png" });
@@ -86,7 +87,7 @@ test.describe("Carousel area", () => {
     await page.screenshot({ path: "/icons/rightArrow.png" });
   });
 
-  test.skip("Carousel main container area stylizing", async ({ page }) => {
+  test("Carousel main container area stylizing", async ({ page }) => {
     await page.goto(urlAbout);
 
     const carousel = page.locator("#carouselImage");
@@ -134,7 +135,7 @@ test.describe("Carousel area", () => {
     expect(grabbedMargin).toBe("40px 0px");
   });
 
-  test.skip("Carousel center text stylizing", async ({ page }) => {
+  test("Carousel center text stylizing", async ({ page }) => {
     await page.goto(urlAbout);
 
     const carousel = page.locator("#testOnImageHere");
@@ -156,9 +157,7 @@ test.describe("Carousel area", () => {
     expect(grabbedMarginCarousel).toBe("0px 50px");
   });
 
-  test.skip("Should contain an unordered list of information", async ({
-    page,
-  }) => {
+  test("Should contain an unordered list of information", async ({ page }) => {
     await page.goto(urlAbout);
     await expect(page.locator("ul > li")).toContainText([
       "Applied & Natural Sciences",
@@ -171,7 +170,7 @@ test.describe("Carousel area", () => {
   });
 });
 
-test.skip("The Arrow Area", () => {
+test.describe("The Arrow Area", () => {
   test("Link tag and navigation", async ({ page }) => {
     await page.goto(urlAbout);
 

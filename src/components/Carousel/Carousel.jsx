@@ -33,7 +33,7 @@ export default function Carousel() {
 
   return (
     <>
-      <div className="parent-carousel">
+      <div className="parent-carousel" id="carouselImage">
         <div className="btns-carousel-container">
           <div className="flex">
             <Image
@@ -45,7 +45,7 @@ export default function Carousel() {
             />
           </div>
           <div className="img-text-container">
-            <p>{imgText}</p>
+            <span id="testOnImageHere">{imgText}</span>
           </div>
           <div className="flex">
             <Image
@@ -57,10 +57,10 @@ export default function Carousel() {
             />
           </div>
         </div>
-        <div className="image-carousel" id="carouselImage">
+        <div className="image-carousel">
           <Image
             src={carouselImages[current].src || null}
-            width={500}
+            width={480}
             height={200}
             alt="carousel image"
             className="carousel-image-main"

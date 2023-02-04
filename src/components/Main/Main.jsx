@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "../Navbar/Navbar";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Main() {
   const router = useRouter();
@@ -11,9 +12,9 @@ export default function Main() {
         <div className="all-parent">
           <div className="main-intro-container">
             <div className="main-heading-container">
-              <h2>
+              <h1>
                 An investment in <br /> knowledge pays the best interest.
-              </h2>
+              </h1>
             </div>
             <div className="hr-container">
               <hr />
@@ -21,26 +22,34 @@ export default function Main() {
             <div className="description-container">
               <p>
                 Different than a college or university, the British Columbia
-                institure of Technology offers practical, flexible, applied
+                Institute of Technology offers practical, flexible, applied
                 education with instructors who have direct, hands-on experience
                 in their field.
               </p>
             </div>
             <div className="btn-parent">
               <div className="btn-child">
-                <button onClick={() => router.push("/about")}>
-                  More About Us
-                </button>
+                <Link href="/about">
+                  <button>More About Us</button>
+                </Link>
               </div>
               <div className="btn-child">
-                <button onClick={() => router.push("/contact")}>
-                  Contact Us
-                </button>
+                <Link href="/contact">
+                  <button>Contact Us</button>
+                </Link>
               </div>
             </div>
           </div>
           <div className="flex">
-            <Image src={"/icons/downwardArrow.png"} width={50} height={50} />
+            <Link href="/about">
+              <span>
+                <Image
+                  src={"/icons/downwardArrow.png"}
+                  width={50}
+                  height={50}
+                />
+              </span>
+            </Link>
           </div>
         </div>
       </div>

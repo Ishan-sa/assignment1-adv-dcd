@@ -8,7 +8,7 @@ import Head from "next/head";
 export default function about() {
   const deptList = [
     "Applied & Natural Sciences",
-    "Business and Media",
+    "Business & Media",
     "Computing & IT",
     "Engineerin",
     "Health Sciences",
@@ -19,9 +19,9 @@ export default function about() {
       <Head>
         <title>About Us</title>
         <meta name="author" content="MDIA 2109" />
-        <meta name="og:title" content="Assignment #1 - About Us Page" />
+        <meta property="og:title" content="Assignment #1 - About Us Page" />
         <meta
-          name="description"
+          property="og:description"
           content="BCIT Digital Design and Development Diploma"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

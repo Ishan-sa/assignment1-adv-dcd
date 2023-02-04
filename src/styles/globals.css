@@ -89,7 +89,7 @@ ul > li {
   margin-left: 0;
 }
 
-.main-intro-container h2 {
+.main-intro-container h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
@@ -115,7 +115,8 @@ ul > li {
   display: flex;
 }
 
-.btn-child > button {
+.btn-child > a > button,
+.submitBtn {
   background-color: transparent;
   border: none;
   border: 2px solid white;
@@ -124,7 +125,12 @@ ul > li {
   color: white;
 }
 
-.btn-child > button:hover {
+.btn-child > a > button:hover {
+  background-color: #fff;
+  color: #30505d;
+}
+
+.submitBtn:hover {
   background-color: #fff;
   color: #30505d;
 }
@@ -202,29 +208,93 @@ ul > li {
   width: 100%;
 }
 
-form {
+/* form {
+  display: flex;
+  flex-direction: column;
   max-width: 700px;
-  border: 0.125rem solid black;
   display: flex;
   width: 100%;
   justify-content: center;
   margin: auto;
-  padding: 2rem 4rem;
   gap: 0.6rem;
+}
+
+form > fieldset {
+  border: 0.125rem solid black;
+  padding: 2rem 4rem;
 }
 
 .name-cont {
   gap: 0.2rem;
+  display: flex;
+  width: 100%;
 }
 
 .name-child {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   gap: 0.3rem;
+}
+
+.email-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+} */
+
+form {
+  display: table;
+  width: 100%;
+  margin: auto;
+  max-width: 700px;
+}
+
+fieldset {
+  border: 0.125rem solid black;
+  padding: 2rem 4rem;
+  margin-bottom: 0.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.3rem 1rem;
+  text-align: left;
+  /* width: 100%; */
+}
+
+td > input {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.name-cont {
+  width: 100%;
+}
+
+.email-cont {
+  width: 100%;
 }
 
 .all-container-contact {
   display: flex;
   flex-direction: column;
   gap: 6rem;
+}
+
+.all-container-contact h1 {
+  color: white;
 }
 
 .down-img-container {
@@ -246,17 +316,30 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
   width: 100%;
   position: absolute;
 }
 
 .img-text-container {
   display: flex;
-  padding: 10px;
-  margin: 0px 40px;
-  background-color: rgba(16, 46, 53, 0.5);
   color: #fff;
+  background-repeat: no-repeat;
+}
+
+#carouselImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+#testOnImageHere {
+  background-color: rgba(16, 46, 53, 0.5);
+  padding: 10px;
+  margin: 0px 50px;
+  text-align: center;
 }
 
 .parent-carousel {
@@ -339,4 +422,21 @@ form {
 .carousel-image-main {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.submit-btn-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.error-msg {
+  color: rgb(201, 51, 51);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.err-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
