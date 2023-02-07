@@ -56,18 +56,16 @@ export default function Form() {
   };
 
   useEffect(() => {
-    if (
+    setButton(
       firstNameError === "" &&
-      lastNameError === "" &&
-      emailError === "" &&
-      firstNameVal !== "" &&
-      lastNameVal !== "" &&
-      emailVal !== ""
-    ) {
-      setButton(true);
-    } else {
-      setButton(false);
-    }
+        lastNameError === "" &&
+        emailError === "" &&
+        firstNameVal !== "" &&
+        lastNameVal !== "" &&
+        emailVal !== ""
+        ? true
+        : false
+    );
   });
 
   useEffect(() => {

@@ -31,7 +31,7 @@ export default function about() {
         <Navbar />
         <div className="parent-content-about">
           <Heading title="About Us" />
-          <div>
+          <div className="padding-cont">
             <div className="about-content-container">
               <p>
                 We are proud to deliver an education that goes beyond textbooks

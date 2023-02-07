@@ -18,8 +18,14 @@ export default function Navbar() {
           width={50}
           height={50}
           onClick={handleMenu}
+          alt="menu-icon"
         />
-        <Image src={"/icons/graduation-hat.png"} width={50} height={50} />
+        <Image
+          src={"/icons/graduation-hat.png"}
+          width={50}
+          height={50}
+          alt="graduation-hat"
+        />
       </div>
       {isMenuOpen && (
         <div className="menu-bg-container">
@@ -48,6 +54,7 @@ export default function Navbar() {
             src={"/background-images/menuBackground.png"}
             width={240}
             height={240}
+            alt="menu-background"
           />
         </div>
       )}

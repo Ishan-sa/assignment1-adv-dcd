@@ -40,13 +40,14 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="home-down-arrow-container">
             <Link href="/about">
               <span>
                 <Image
                   src={"/icons/downwardArrow.png"}
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={40}
+                  alt="arrow-down"
                 />
               </span>
             </Link>

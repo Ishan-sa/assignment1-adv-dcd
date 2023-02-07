@@ -25,13 +25,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 10rem;
+  padding: 2rem 4rem;
 }
 
 .menu-bg-container {
   position: absolute;
   top: 0rem;
-  left: 6.5rem;
+  left: 2.5rem;
 }
 
 ul {
@@ -66,14 +66,6 @@ ul > li {
   border: none;
   font-size: larger;
   color: white;
-}
-
-.main-intro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 28rem;
 }
 
 .hr-container {
@@ -138,8 +130,15 @@ ul > li {
 .all-parent {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end;
+}
+
+.main-intro-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  max-width: 28rem;
+  padding: 0rem 5rem;
 }
 
 .huh {
@@ -202,6 +201,7 @@ ul > li {
 
 .form-container {
   margin-top: -3rem;
+  padding: 1rem 2rem;
 }
 
 .width-full {
@@ -346,6 +346,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0rem 1.3rem;
 }
 
 /* about us page */
@@ -410,8 +411,8 @@ label {
   align-items: center;
   gap: 1rem;
   position: fixed;
-  right: 9rem;
-  bottom: 11rem;
+  right: 4rem;
+  bottom: 3rem;
 }
 
 .list-arrows-cont {
@@ -439,4 +440,23 @@ label {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+
+.home-down-arrow-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  cursor: pointer;
+}
+
+.heading-cont {
+  padding: 1rem 2rem;
+}
+
+.padding-cont {
+  padding: 0rem 1.4rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -23,17 +23,17 @@ export default function contact() {
       <div className="parent-cont-reverse">
         <Navbar />
         <div className="all-container-contact">
-          <Heading title="Contact Us" />
+          <Heading title="Contact Us" padding="heading-cont" />
           <Subhead />
           <Form />
-          <div className="down-img-container">
+          <div className="home-down-arrow-container">
             <Link href="/about">
               <span>
                 <Image
-                  src="/icons/upwardArrow.png"
+                  src={"/icons/upwardArrow.png"}
                   width={30}
                   height={40}
-                  alt="up-arrow-img"
+                  alt="arrow-up"
                 />
               </span>
             </Link>

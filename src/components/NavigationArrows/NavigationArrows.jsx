@@ -4,13 +4,14 @@ import Link from "next/link";
 export default function NavigationArrows() {
   return (
     <div className="arrow-cont">
-      <Link href="/about">
+      <Link href="/">
         <span>
           <Image
             src={"/icons/upwardArrow.png"}
             width={30}
             height={40}
             alt="arrow-up"
+            className="cursor-pointer"
           />
         </span>
       </Link>
@@ -22,6 +23,7 @@ export default function NavigationArrows() {
             width={30}
             height={40}
             alt="arrow-up"
+            className="cursor-pointer"
           />
         </span>
       </Link>
