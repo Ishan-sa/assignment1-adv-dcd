@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { carouselImages } from "./data";
+import { carouselImages, imgTextData } from "./data";
 
 export default function Carousel() {
   const [current, setCurrent] = useState(0);
@@ -16,15 +16,15 @@ export default function Carousel() {
 
   const handleImgTxt = () => {
     if (current === 0) {
-      setImgText("Achieve Excellence");
+      setImgText(imgTextData[0].value);
     } else if (current === 1) {
-      setImgText("Embrace Innovation");
+      setImgText(imgTextData[1].value);
     } else if (current === 2) {
-      setImgText("Champion Diversity");
+      setImgText(imgTextData[2].value);
     } else if (current === 3) {
-      setImgText("Pursue Collaboration");
+      setImgText(imgTextData[3].value);
     } else if (current === 4) {
-      setImgText("Engage With Respect");
+      setImgText(imgTextData[4].value);
     }
   };
   useEffect(() => {

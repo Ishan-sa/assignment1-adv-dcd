@@ -20,3 +20,26 @@ export const carouselImages = [
     src: "/carousel-images/4.jpg",
   },
 ];
+
+export const imgTextData = [
+  {
+    id: 0,
+    value: "Achieve Excellence",
+  },
+  {
+    id: 1,
+    value: "Embrace Innovation",
+  },
+  {
+    id: 2,
+    value: "Champion Diversity",
+  },
+  {
+    id: 3,
+    value: "Pursue Collaboration",
+  },
+  {
+    id: 4,
+    value: "Engage With Respect",
+  },
+];

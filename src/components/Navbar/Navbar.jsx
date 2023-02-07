@@ -31,9 +31,7 @@ export default function Navbar() {
         <div className="menu-bg-container">
           <div className="list-container">
             <div className="btn-container">
-              <button className="close-btn" onClick={handleMenu}>
-                X
-              </button>
+              <h1 onClick={handleMenu}>X</h1>
             </div>
             <ul>
               {menuList.map((o, i) => {
